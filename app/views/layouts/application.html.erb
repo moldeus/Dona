@@ -2,13 +2,23 @@
 <html>
 <head>
   <title>Dona</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="page-header container">
+  <h1>Dona <small>Do good in your hood</small></h1>
+</div>
 <%= yield %>
-
+    <hr class="featurette-divider">
+      <footer>
+        <ul class="list-inline container">
+          <li><a href="/pages/contact">Contact</a></li>
+          <li><a href="/pages/about">About</a></li>
+        </ul>
+      </footer>
 </body>
 </html>
